@@ -1,0 +1,173 @@
+show users: 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc-reply message-id="100" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <data>
+        <oper-data-format-cli-block xmlns="urn:alcatel-lucent.com:sros:ns:yang:cli-content-layer-r13">
+            <item>
+                <cli-show>users</cli-show>
+                <response>
+===============================================================================
+User                             Type      Login time           Idle time
+  Session ID   (Router instance)
+               From
+===============================================================================
+                                 Console         --             4d 20:19:05 --
+  6            (--)
+               --
+admin                            SSHv2     08MAR2022 03:01:09   0d 00:06:44 --
+  25           (management)
+               10.120.42.144
+netcfg_user                      SSHv2     08MAR2022 03:25:12   0d 00:00:00 --
+ #33           (management)
+               10.120.42.144
+-------------------------------------------------------------------------------
+Number of users: 2
+&apos;#&apos; indicates the current active session
+===============================================================================
+                </response>
+            </item>
+        </oper-data-format-cli-block>
+    </data>
+</rpc-reply>
+]]>]]>
+
+show version and ports: 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc-reply message-id="100" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <data>
+        <oper-data-format-cli-block xmlns="urn:<snipped>:sros:ns:yang:cli-content-layer-r13">
+            <item>
+                <cli-show>version</cli-show>
+                <response>
+TiMOS-C-20.10.R4 cpm/hops64 Nokia 7750 SR Copyright (c) 2000-2021 Nokia.
+All rights reserved. All use subject to applicable license agreements.
+Built on Wed Apr 14 12:34:25 PDT 2021 by builder in /builds/c/2010B/R4/panos/main/sros
+                </response>
+            </item>
+            <item>
+                <cli-show>port</cli-show>
+                <response>
+
+===============================================================================
+Ports on Slot 4
+===============================================================================
+Port          Admin Link Port    Cfg  Oper LAG/ Port Port Port   C/QS/S/XFP/
+Id            State      State   MTU  MTU  Bndl Mode Encp Type   MDIMDX
+-------------------------------------------------------------------------------
+4/1/1         Up    No   Down    9212 9212    - netw null xcme
+4/1/2         Down  No   Down    9212 9212    - netw null xcme
+4/1/3         Down  No   Down    9212 9212    - netw null xcme
+4/1/4         Up    No   Down    9212 9212    - netw null xcme   10GBASE-LR  *
+4/1/5         Down  No   Down    9212 9212    - netw null xcme
+4/1/6         Down  No   Down    9212 9212    - netw null xcme   GIGE-LX  10KM
+4/1/7         Down  No   Down    9212 9212    - netw null xcme
+4/1/8         Down  No   Down    9212 9212    - netw null xcme
+4/1/9         Down  No   Down    9212 9212    - netw null xcme   GIGE-LX  10KM
+4/1/10        Down  No   Down    9212 9212    - netw null xcme
+4/1/11        Down  No   Down    9212 9212    - netw null xcme
+4/1/12        Down  No   Down    9212 9212    - netw null xcme
+4/1/13        Up    No   Down    9212 9212    - netw null xcme   10GBASE-LR  *
+4/1/14        Up    No   Down    9212 9212    - netw null xcme   10GBASE-SR
+4/1/15        Down  No   Down    9212 9212    - netw null xcme
+4/1/16        Down  No   Down    9212 9212    - netw null xcme
+4/1/17        Up    No   Down    9212 9212    - netw null xcme   10GBASE-LR  *
+4/1/18        Up    No   Down    9212 9212    - netw null xcme   10GBASE-LR  *
+4/1/19        Down  No   Down    9212 9212    - netw null xcme
+4/1/20        Down  No   Down    9212 9212    - netw null xcme
+4/1/21        Down  No   Down    9212 9212    - netw null xcme
+4/1/22        Down  No   Down    9212 9212    - netw null xcme
+4/1/23        Down  No   Down    9212 9212    - netw null xcme
+4/1/24        Down  No   Down    9212 9212    - netw null xcme
+4/2/1         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/2         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/3         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/4         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/5         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/6         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/7         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/8         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/9         Down  No   Ghost   9212 9212    - netw null xcme
+4/2/10        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/11        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/12        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/13        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/14        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/15        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/16        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/17        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/18        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/19        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/20        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/21        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/22        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/23        Down  No   Ghost   9212 9212    - netw null xcme
+4/2/24        Down  No   Ghost   9212 9212    - netw null xcme
+
+===============================================================================
+Ports on Slot 7
+===============================================================================
+Port          Admin Link Port    Cfg  Oper LAG/ Port Port Port   C/QS/S/XFP/
+Id            State      State   MTU  MTU  Bndl Mode Encp Type   MDIMDX
+-------------------------------------------------------------------------------
+7/1/1         Up    Yes  Up      9212 9212    - hybr dotq xgige  10GBASE-LR  *
+7/1/2         Up    No   Down    9212 9212    - netw null xgige
+7/1/3         Up    No   Down    9212 9212    - netw null xgige  10GBASE-LR  *
+7/1/4         Down  No   Down    9212 9212    - netw null xgige
+7/1/5         Down  No   Down    9212 9212    - netw null xgige
+7/1/6         Down  No   Down    9212 9212    - netw null xgige
+7/2/1         Down  No   Down    9212 9212    - netw null xgige
+7/2/2         Down  No   Down    9212 9212    - netw null xgige
+7/2/3         Down  No   Down    9212 9212    - netw null xgige
+7/2/4         Down  No   Down    9212 9212    - netw null xgige
+7/2/5         Down  No   Down    9212 9212    - netw null xgige
+7/2/6         Down  No   Down    9212 9212    - netw null xgige
+
+===============================================================================
+Ports on Slot 9
+===============================================================================
+Port          Admin Link Port    Cfg  Oper LAG/ Port Port Port   C/QS/S/XFP/
+Id            State      State   MTU  MTU  Bndl Mode Encp Type   MDIMDX
+-------------------------------------------------------------------------------
+9/1/1         Down  No   Down    9212 9212    - netw null xgige
+9/1/2         Up    No   Down    9212 9212    - netw null xgige  10GBASE-LR  *
+9/1/3         Down  No   Down    9212 9212    - netw null xgige
+9/1/4         Down  No   Down    9212 9212    - netw null xgige
+9/1/5         Down  No   Down    9212 9212    - netw null xgige
+
+===============================================================================
+Ports on Slot A
+===============================================================================
+Port          Admin Link Port    Cfg  Oper LAG/ Port Port Port   C/QS/S/XFP/
+Id            State      State   MTU  MTU  Bndl Mode Encp Type   MDIMDX
+-------------------------------------------------------------------------------
+A/1           Up    Yes  Up      1514 1514    - netw null faste  MDI
+A/3           Down  No   Down    1514 1514    - netw null faste
+A/4           Up    No   Down    1514 1514    - netw null faste
+
+===============================================================================
+Ports on Slot B
+===============================================================================
+Port          Admin Link Port    Cfg  Oper LAG/ Port Port Port   C/QS/S/XFP/
+Id            State      State   MTU  MTU  Bndl Mode Encp Type   MDIMDX
+-------------------------------------------------------------------------------
+B/1           Up    No   Ghost   1514 1514    - netw null faste
+B/3           Down  No   Ghost   1514 1514    - netw null faste
+B/4           Up    No   Ghost   1514 1514    - netw null faste
+
+===============================================================================
+Ports on Port Cross Connect 1
+===============================================================================
+Port          Admin Link Port    Cfg  Oper LAG/ Port Port Port   C/QS/S/XFP/
+Id            State      State   MTU  MTU  Bndl Mode Encp Type   MDIMDX
+-------------------------------------------------------------------------------
+pxc-1.a       Up    Yes  Up      9208 9208    - hybr dotq xgige
+pxc-1.b       Up    Yes  Up      9208 9208    - hybr dotq xgige
+===============================================================================
+                </response>
+            </item>
+        </oper-data-format-cli-block>
+    </data>
+</rpc-reply>
+]]>]]>
