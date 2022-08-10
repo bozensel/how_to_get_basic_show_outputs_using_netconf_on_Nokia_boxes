@@ -14,4 +14,3 @@ The NETCONF protocol can be conceptually partitioned into four layers:
 - The Messages layer provides a mechanism for encoding remote procedure calls (RPCs) and notifications.
 
 - The Secure Transport layer provides a secure and reliable transport of messages between a client and a server.
-
